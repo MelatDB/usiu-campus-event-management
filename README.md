@@ -179,4 +179,4 @@ The backend is feature-complete for the workflows above. The React frontend impl
 
 ## License
 
-No license has been specified yet. Add a `LICENSE` file if you plan to distribute or open-source the project.
+This project is licensed under the [MIT License](LICENSE).
