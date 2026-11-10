@@ -1,0 +1,24 @@
+.favorite-card-wrap {
+  position: relative;
+}
+
+.remove-fav-btn {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: var(--danger);
+  color: var(--white);
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.15s ease;
+}
+
+.remove-fav-btn:hover {
+  transform: scale(1.12);
+}

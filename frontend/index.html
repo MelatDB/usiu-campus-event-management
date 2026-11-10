@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USIU Campus Events - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <i class="fas fa-calendar-alt"></i>
+                <h1>USIU Campus Events</h1>
+                <p>Discover and Register for Campus Events</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i> Email
+                    </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        placeholder="Enter your email" 
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i> Password
+                    </label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        placeholder="Enter your password" 
+                        required
+                    >
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                </div>
+                
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+            </form>
+            
+            <div class="demo-accounts">
+                <p class="demo-title">Quick Login (Demo Accounts)</p>
+                <div class="demo-buttons">
+                    <button onclick="quickLogin('admin@usiu.ac.ke', 'Admin@12345')" class="btn-demo">
+                        <i class="fas fa-user-shield"></i> Admin
+                    </button>
+                    <button onclick="quickLogin('melat.desta@student.usiu.ac.ke', 'Student@12345')" class="btn-demo">
+                        <i class="fas fa-user-graduate"></i> Student
+                    </button>
+                    <button onclick="quickLogin('amina.organizer@usiu.ac.ke', 'Organizer@12345')" class="btn-demo">
+                        <i class="fas fa-user-tie"></i> Organizer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="auth.js"></script>
+</body>
+</html>

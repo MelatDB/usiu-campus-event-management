@@ -1,0 +1,92 @@
+.my-events-page {
+  min-height: 100vh;
+}
+
+.text-muted {
+  color: var(--ink-500);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.my-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.my-event-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: var(--cream-50);
+  border: 1px solid var(--cream-300);
+  border-radius: var(--radius-lg);
+  padding: 18px 22px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.15s ease;
+  flex-wrap: wrap;
+}
+
+.my-event-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.my-event-main {
+  flex: 1;
+  min-width: 260px;
+}
+
+.my-event-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.my-event-header h3 {
+  font-size: 1.05rem;
+  color: var(--blue-900);
+}
+
+.my-event-header h3:hover {
+  text-decoration: underline;
+}
+
+.my-event-badges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.my-event-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--ink-500);
+}
+
+.my-event-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.my-event-meta i {
+  color: var(--blue-600);
+}
+
+.my-event-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .my-event-actions {
+    width: 100%;
+  }
+}

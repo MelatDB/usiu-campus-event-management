@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USIU Campus Events - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-page">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-calendar-alt"></i>
+                <span>USIU Campus Events</span>
+            </div>
+            <div class="nav-user">
+                <div class="notification-badge" onclick="viewNotifications()">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge-count" id="notificationCount">0</span>
+                </div>
+                <div class="user-info">
+                    <div class="user-name" id="userName">Loading...</div>
+                    <div class="user-role" id="userRole">Student</div>
+                </div>
+                <button class="btn-logout" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <h1 id="welcomeMessage">Welcome Back!</h1>
+            <p>Discover and register for exciting campus events</p>
+        </div>
+
+        <!-- Recommended Events (For Students) -->
+        <div id="recommendedSection" style="display: none;">
+            <h2 class="section-title">
+                <i class="fas fa-star"></i>
+                Recommended For You
+            </h2>
+            <div id="recommendedEvents" class="events-grid">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading recommended events...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- All Events -->
+        <h2 class="section-title">
+            <i class="fas fa-calendar-check"></i>
+            <span id="allEventsTitle">All Events</span>
+        </h2>
+        <div id="allEvents" class="events-grid">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Loading events...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Details Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalEventTitle">Event Details</h2>
+                <span class="close-modal" onclick="closeEventModal()">&times;</span>
+            </div>
+            <div class="modal-body" id="modalEventBody">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading event details...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notifications Panel -->
+    <div id="notificationsPanel" class="notifications-panel">
+        <div class="notifications-header">
+            <h3>Notifications</h3>
+            <button class="close-panel" onclick="closeNotifications()">&times;</button>
+        </div>
+        <div class="notifications-body" id="notificationsBody">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Loading notifications...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

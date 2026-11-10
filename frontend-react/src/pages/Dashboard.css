@@ -1,0 +1,84 @@
+.welcome-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: var(--blue-600);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  color: var(--white);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-banner::after {
+  content: '\f518';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  right: -20px;
+  top: -30px;
+  font-size: 9rem;
+  color: rgba(255, 255, 255, 0.07);
+  transform: rotate(-10deg);
+}
+
+.welcome-text h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.welcome-text h1 i {
+  color: var(--gold-400);
+}
+
+.welcome-text p {
+  margin-top: 6px;
+  opacity: 0.9;
+  font-size: 0.92rem;
+  max-width: 640px;
+}
+
+.welcome-actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.events-section {
+  margin-bottom: 8px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 640px) {
+  .welcome-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+  }
+
+  .welcome-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .welcome-actions .btn {
+    flex: 1;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}

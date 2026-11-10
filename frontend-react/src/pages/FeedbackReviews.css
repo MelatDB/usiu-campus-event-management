@@ -1,0 +1,261 @@
+.feedback-reviews-page {
+  min-height: 100vh;
+}
+
+.feedback-event-picker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  background: var(--cream-50);
+  border: 1px solid var(--cream-300);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+}
+
+.feedback-event-picker label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ink-700);
+}
+
+.feedback-event-picker select {
+  flex: 1;
+  max-width: 560px;
+  padding: 10px 14px;
+  border: 1.5px solid var(--cream-400);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  font-size: 0.9rem;
+  color: var(--ink-800);
+}
+
+.fb-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.fb-metric-card {
+  background: var(--white);
+  border: 1px solid var(--cream-300);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.fb-metric-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+.fb-metric-value {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--blue-900);
+  margin: 6px 0;
+}
+
+.fb-metric-suffix {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink-400);
+}
+
+.fb-metric-sub {
+  font-size: 0.82rem;
+  color: var(--ink-500);
+}
+
+.fb-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.fb-stars i {
+  color: var(--cream-400);
+  font-size: 1.05rem;
+}
+
+.fb-stars i.on {
+  color: var(--gold-400);
+}
+
+.fb-lower-grid {
+  display: grid;
+  grid-template-columns: minmax(320px, 400px) 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.fb-panel {
+  background: var(--white);
+  border: 1px solid var(--cream-300);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.fb-panel h2 {
+  font-size: 1rem;
+  color: var(--blue-900);
+  margin-bottom: 16px;
+}
+
+.fb-panel h2 i {
+  color: var(--blue-600);
+  margin-right: 6px;
+}
+
+.fb-dist-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.fb-dist-label {
+  width: 64px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-600);
+  flex-shrink: 0;
+}
+
+.fb-dist-bar {
+  flex: 1;
+  height: 12px;
+  background: var(--cream-200);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.fb-dist-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-400), var(--gold-500));
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.fb-dist-count {
+  width: 76px;
+  text-align: right;
+  font-size: 0.8rem;
+  color: var(--ink-500);
+  flex-shrink: 0;
+}
+
+.fb-review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fb-no-reviews {
+  color: var(--ink-500);
+  font-size: 0.88rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.fb-review {
+  border: 1px solid var(--cream-300);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  background: var(--cream-50);
+}
+
+.fb-review-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fb-review-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--blue-600);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.fb-review-author {
+  flex: 1;
+  min-width: 0;
+}
+
+.fb-review-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ink-800);
+}
+
+.fb-review-date {
+  font-size: 0.76rem;
+  color: var(--ink-500);
+}
+
+.fb-review-rating {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.8rem;
+}
+
+.fb-review-rating i {
+  color: var(--cream-400);
+  font-size: 0.8rem;
+}
+
+.fb-review-rating i.on {
+  color: var(--gold-400);
+}
+
+.fb-review-rating span {
+  margin-left: 6px;
+  font-weight: 600;
+  color: var(--ink-600);
+}
+
+.fb-review-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.fb-review-tag {
+  padding: 4px 10px;
+  background: var(--blue-600);
+  color: var(--white);
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.fb-review-comment {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  color: var(--ink-700);
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .fb-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fb-lower-grid {
+    grid-template-columns: 1fr;
+  }
+}

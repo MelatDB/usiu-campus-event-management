@@ -1,0 +1,52 @@
+.crud-page {
+  background: transparent;
+  min-height: 100vh;
+}
+
+.crud-header {
+  margin-bottom: 0;
+  flex: 1;
+  min-width: 260px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  background: var(--cream-50);
+  border-radius: var(--radius-lg);
+}
+
+.text-muted {
+  color: var(--ink-500);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.required-star {
+  color: var(--danger);
+  margin-left: 2px;
+}
+
+.crud-modal {
+  max-width: 560px;
+}
+
+.crud-modal .modal-body {
+  padding-bottom: 8px;
+}
+
+.crud-modal .form-group input,
+.crud-modal .form-group select,
+.crud-modal .form-group textarea {
+  background: var(--cream-100);
+}
+
+.user-cell-name {
+  font-weight: 600;
+  color: var(--blue-900);
+}
+
+.user-cell-email {
+  font-size: 0.78rem;
+  color: var(--ink-500);
+  margin-top: 2px;
+}
